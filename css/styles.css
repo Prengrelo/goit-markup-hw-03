@@ -13,7 +13,25 @@ body {
   color: var(--font-color);
   background-color: var(--background-color);
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
 /* HEADER */
 .page-nav >.link {
   font-family: 'Raleway', sans-serif;
