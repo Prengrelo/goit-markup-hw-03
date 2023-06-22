@@ -28,6 +28,7 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+  margin-bottom: 8px;
 }
 h1,
 h2,
@@ -47,19 +48,18 @@ ol {
 .container {
   width: 1440px;
   margin: 0 auto;
-  padding-right: 78px;
-  padding-left: 78px;
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 /* HEADER */
+
 .header-container {
-  width: 1440px;
+  width: 1158px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 0;
-  border-bottom: 1px solid #E7E9FC;
+  padding: 0 15px;
+  border-bottom: 1px solid #e7e9fc;
     background: #FFFFFF;
 }
 .page-nav > .link {
@@ -84,20 +84,17 @@ ol {
   display: flex;
   align-items: center;
   gap: 40px;
-
+padding: 24px 0;
   
 }
 .header-studio {
   color: var(--secondary-color);
 }
 .header-logo {
- 
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
-  padding-right: 76px;
-  padding-left: 156px;
-
+  margin-right: 76px;
 }
 
 .list .link {
@@ -139,6 +136,7 @@ ol {
 /* SECTION N1 */
 .section-effective {
   background-color: var(--secondary-color);
+  padding: 188px 0;
 }
 .section-effective .page-tittle {
   font-size: 56px;
@@ -158,6 +156,7 @@ ol {
   padding-top: 188px;
 }
 .page-tittle {
+  max-width: 496px;
   margin: 0 auto;
   padding-bottom: 48px;
 }
@@ -177,6 +176,7 @@ ol {
   margin: 0 auto;
   gap: 10px;
   border: 0px;
+  min-width: 169px
 }
 .btn:hover,
 .btn:focus {
@@ -231,7 +231,7 @@ ol {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--secondary-color);
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .three-list-container {
   display: flex;
@@ -240,6 +240,9 @@ ol {
   padding-left: 156px;
   width: calc(100-2*24)/3;
   gap: 24px;
+}
+.list-item-three {
+width: calc((100% - 2 * 24px) / 3)
 }
 
 /* SECTION N4 */
@@ -270,7 +273,7 @@ ol {
   text-transform: capitalize;
   color: var(--secondary-color);
   display: flex;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .section-four-subtittle {
   font-weight: 500;
@@ -279,6 +282,7 @@ ol {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
+  margin-bottom: 8px;
 }
 .four-subtittle-container {
 padding: 32px 16px;
@@ -295,6 +299,7 @@ width: 264px;
 /* footer */
 .footer {
   background-color: var(--secondary-color);
+  padding: 100px 0;
 }
 .footer-container {
   display: flex;
@@ -304,7 +309,6 @@ width: 264px;
   padding-top: 100px;
   padding-right: 1020px;
   padding-bottom: 100px;
-  gap: 16px;
 }
 .footer > .footer-container > .link {
   font-family: 'Raleway', sans-serif;
@@ -315,8 +319,8 @@ width: 264px;
   text-transform: uppercase;
   color: var(--color-ocean);
   text-decoration: none;
-
-  
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-studio {
@@ -336,6 +340,10 @@ width: 264px;
   color: var(--background-color-bwhite);
 }
 /* Portfolio */
+.sectionptfl-container {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
 .btn-all {
   font-family: var(--primary-font);
   font-weight: 500;
@@ -349,6 +357,7 @@ width: 264px;
   border-radius: 4px;
     border: 1px solid #E7E9FC;
     background:#F4F4FD;
+    padding: 12px 24px
 }
 .btn-all:hover,
 .btn-all:focus {
@@ -357,6 +366,12 @@ width: 264px;
   border-radius: 4px;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
+.btn-all:hover {
+border: 1px solid transparent;
+}
+.btn-all:focus {
+  border: 1px solid transparent;
+}
 
 .solutions-tittle {
   font-weight: 500;
@@ -364,20 +379,20 @@ width: 264px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
+  margin-bottom: 8px
 }
 .solutions-p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--font-color);
-  padding-top: 8px;
 }
 .list-button-portfolio {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding-top: 96px;
-    padding-bottom: 72px;
+  
+    margin-bottom: 72px;
     padding-right: 427px;
     padding-left: 427px;
   gap: 24px;
@@ -390,13 +405,17 @@ width: 264px;
   gap: 48px 24px;
 }
 .list-border-item {
-  padding: 16px 32px;
+  padding: 32px 16px;
   border: 1px solid #E7E9FC;
   border-top: none;
     background: #FFFFFF;
+    
 }
 .list-img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+.list-item-portfolio {
+  width: calc((100% - 48px) / 3);
 }
