@@ -58,6 +58,7 @@ ol {
     align-items: center;
     justify-content: space-between;
     gap: 332px;
+    padding: 0 15px;
 }
 
 .page-nav > .link {
