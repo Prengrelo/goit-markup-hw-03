@@ -47,7 +47,7 @@ ol {
   width: 1158px;
  margin-right: auto;
  margin-left: auto;
-  padding: 15px 15px;
+  padding: 0 15px;
 }
 /* HEADER */
 .header {
@@ -57,7 +57,6 @@ ol {
   display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 332px;
     padding: 0 15px;
 }
 
@@ -92,12 +91,10 @@ padding: 24px 0;
 }
 .header-logo {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
   margin-right: 76px;
 }
 .list .link {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -148,7 +145,7 @@ align-items: center;
 .page-tittle {
   max-width: 496px;
   margin: 0 auto;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
 }
 .btn {
   font-family: var(--primary-font);
@@ -364,12 +361,7 @@ border: 1px solid transparent;
 }
 .list-button-portfolio {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  
     margin-bottom: 72px;
-    padding-right: 427px;
-    padding-left: 427px;
   gap: 24px;
   justify-content: center;
 }
