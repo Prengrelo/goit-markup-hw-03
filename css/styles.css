@@ -84,7 +84,7 @@ ol {
 padding: 24px 0;
 }
 .link-item-header {
-  padding: 24px 0
+  padding: 24px 0;
 }
 .header-studio {
   color: var(--secondary-color);
@@ -94,7 +94,7 @@ padding: 24px 0;
   margin-right: 76px;
 }
 .list .link {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -120,6 +120,7 @@ align-items: center;
   font-style: normal;
 }
 .address .list .link {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
